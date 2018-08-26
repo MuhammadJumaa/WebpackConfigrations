@@ -1,0 +1,31 @@
+module.exports={
+	entry:[
+		'./src/index.js'
+	]
+	,
+	output:{
+		path: __dirname + '/dist',
+		publicPath: '/',
+		filename:'bundle.js'
+	},
+	devServer:{
+		contentBase:'./dist'
+	},
+	module:{
+		rules:[
+			{
+			test:/\.(js|jsx)$/,
+			use:['babel-loader'],
+			exclude:/node_modules/
+		},{
+		test:/\.(js|jsx)$/,
+		use:['eslint-loader'],
+		exclude:/node_modules/
+	}
+		]
+	}
+	,
+	resolve:{
+		extensions:['.js','.jsx']
+	}
+}

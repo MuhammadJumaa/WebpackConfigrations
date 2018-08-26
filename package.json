@@ -1,0 +1,39 @@
+{
+  "name": "webackproj",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "M.Jumaa",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "env",
+      "stage-2",
+      "react"
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "install": "^0.12.1",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^2.0.14",
+    "webpack-dev-server": "^3.1.3"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development"
+  },
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  }
+}
